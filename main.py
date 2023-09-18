@@ -5,12 +5,13 @@ from slack_sdk.errors import SlackApiError
 from slack_sdk.webhook import WebhookClient
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
+from env import *
 
 # Your tokens
-SLACK_BOT_TOKEN = " "
-SLACK_APP_TOKEN = " "
-OPENAI_API_KEY  = " "
-WEBHOOK_URL     = " "
+SLACK_BOT_TOKEN = "xoxb-5909093910546-5906255204197-ktLqmSHoVwAdH3QhAH0OjfeX"
+SLACK_APP_TOKEN = "xapp-1-A05SR0SFMPV-5910762979203-4564a07c8820dd208e4608a662344f08a46cd81ad8b08a0ae2f59ac2b5214aa8"
+OPENAI_API_KEY  = "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"
+WEBHOOK_URL     = "https://hooks.slack.com/services/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"
 
 # Create a WebClient instance
 client = WebClient(token=SLACK_BOT_TOKEN)
